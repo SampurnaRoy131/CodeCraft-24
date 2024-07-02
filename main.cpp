@@ -7,16 +7,14 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
-  FileParser file(std::move(argv[2]));
+  FileParser file(
+      std::move(argv[2])); // This is move semantics, if you are interested you
+                           // can learn more by reading up on std::move
   PatternParser pattern(argv[1]);
   ActionParser action(argv[1]);
 
-  for (int i = 0; i < file.get_parsed().size(); ++i) {
-    if (!pattern.check_pattern(file.get_parsed()[i], i + 1))
-      continue;
-    action.run(file.get_parsed()[i]);
-    std::cout << std::endl;
-  }
+  // Print the required output by running the action on each parsed line,
+  // depending on if the pattern is satisfied
 
   return 0;
 }
