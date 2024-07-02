@@ -15,6 +15,8 @@ enum class Operation {
   NONE
 };
 
+// Should take a string lhs, and some template type of RHS, and compare them
+// For example, if T is an int, and the string is "5", then check if rhs == 5
 template <typename T>
 bool compare_op(const std::string &lhs, const T &rhs, const std::string &op) {
   std::stringstream ss(lhs);
