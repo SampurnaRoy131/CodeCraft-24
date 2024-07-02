@@ -118,7 +118,7 @@ This will compile the source code and produce an executable named `pattern_proce
 ## Solution Code
 
 Credit for building the project goes to [Advik](https://github.com/advikkabra), [Tushar](https://github.com/tushar3q34) and [Nandha](https://github.com/nandhagk)  
-The code is stored in [this](https://github.com/advikkabra/awk-clone) repository
+The code is stored in [this](https://github.com/advikkabra/awk-clone) repository and will be made public after the submission deadline
 
 ---
 
