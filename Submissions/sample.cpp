@@ -1,3 +1,6 @@
+//Name: Pranav Raghu
+//Email: myfakeemail@gmail.com
+
 #include "header.h"
 
 FileParser::FileParser(std::string &&filename, char delimiter) {
