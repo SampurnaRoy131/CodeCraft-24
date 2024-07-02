@@ -105,7 +105,8 @@ Test cases will be similar to the examples, and you will have to generate the co
 To pass, your code must run **at least 50% of the test cases** correctly.  
 Note that the patterns will only be upto 2 (a && b or a || b), and not more complex.  
 
-Make a Pull Request by cloning this repository and adding the completed *template.cpp* file to the Submissions folder in the format **code_YourFullNameinCamelCase.cpp** before the deadline. Your details should be specified in the format mentioned in *sample.cpp*  
+We will be releasing a Google Form to collect your responses. We only expect the completed *template.cpp* file.  
+Your details should be specified in the format mentioned in *sample.cpp*  
 
 The deadline is: $$12^{th} July$$ $$11:59 PM$$  
 ## Building the Project
