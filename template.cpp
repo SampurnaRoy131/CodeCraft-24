@@ -1,3 +1,6 @@
+//
+
+
 #include "header.h"
 
 FileParser::FileParser(std::string &&filename, char delimiter) {
@@ -76,3 +79,22 @@ ActionParser::ActionParser(const std::string &input) {
 // If no fields are given, print the entire line
 void ActionParser::run(const std::vector<std::string> &tokens) {
 }
+g++ -o pattern_processor main.cpp
+  <example.txt>
+  1 a b c
+  2 d e f
+  3 g test p
+./pattern_processor "$1>2 { print $0 }" example.txt
+  2 d e f
+./pattern_processor "$2==g||NR>2 { print $0 }" example.txt
+  3 g test p
+./pattern_processor "/p/ { print $3 }" example.txt
+  test
+  ./pattern_processor "NF>3 { print $0 }" example.txt
+  1 a b c
+  2 d e f
+  3 g test p
+  
+  
+  
+  
